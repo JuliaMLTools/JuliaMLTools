@@ -34,7 +34,7 @@ export default function Index() {
                     </Typography>
                     <ProTip />
                 </Grid>
-                <Grid xs={12}>
+                <Grid xs={12} style={{paddingTop:20}}>
                     <Copyright />
                 </Grid>
             </Grid>
