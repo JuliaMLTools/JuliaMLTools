@@ -11,7 +11,7 @@ import { Card } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import BasicCard from './basic-card';
-import CodeBlock from './Code';
+import CodeBlock from './code';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
