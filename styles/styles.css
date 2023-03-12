@@ -1,0 +1,94 @@
+.box{
+    width: 111px;
+    height: 2px;
+    border: 1px red solid;
+}
+.model_num{
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+.serial_num{
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+}
+.target_undefined{
+    color: #999;
+}
+.polygon:hover{
+    cursor: pointer;
+}
+.edit_nameplate_img{
+    cursor: pointer;
+}
+svg.topo_graph {
+    background-color: transparent;
+}
+svg.topo_graph ellipse {
+    stroke: #333;
+    stroke-width: 6px;
+    fill: transparent;
+}
+svg.topo_graph path {
+    fill: #333;
+    stroke: #333;
+}
+svg.topo_graph text {
+    fill: #333;
+    font-family: Arial, sans-serif;
+    font-size: 44px;
+    white-space: pre;
+}
+svg.topo_graph text.in_node, svg.topo_graph text.in_color_node {
+    font-weight: 500;
+}
+div.darkMode svg.topo_graph ellipse {
+    stroke: white;
+}
+div.darkMode svg.topo_graph path {
+    fill: white;
+    stroke: white;
+}
+text.in_node { text-anchor: middle; }
+div.darkMode svg.topo_graph text.node_label {
+    fill: white;
+}
+div.darkMode svg.topo_graph text.in_node {
+    fill: white;
+}
+div.darkMode svg.topo_graph text.in_color_node {
+    fill: #333;
+}
+svg.topo_graph text {
+    cursor: pointer;
+}
+
+span.pointer {cursor: pointer;}
+span.squiggly { text-decoration-line: underline; text-decoration-style: wavy; text-decoration-color:white; text-underline-offset: 3px; }
+span.squiggly1 { text-decoration-color:red; }
+span.squiggly2 { text-decoration-color:green; }
+span.squiggly3 { text-decoration-color:blue; }
+span.squiggly4 { text-decoration-color:purple; }
+span.squiggly5 { text-decoration-color:orange; }
+span.squiggly6 { text-decoration-color:yellow; }
+
+span.under { text-decoration-line: underline; text-decoration-style:solid; text-decoration-color:white;  }
+span.under1 { text-decoration-color:red; }
+span.under2 { text-decoration-color:green; }
+span.under3 { text-decoration-color:blue; }
+span.under4 { text-decoration-color:purple; }
+span.under5 { text-decoration-color:orange; }
+span.under6 { text-decoration-color:yellow; }
+span.under7 { text-decoration-color:teal; }
+span.under8 { text-decoration-color:red; }
+span.under9 { text-decoration-color:green; }
+span.under10 { text-decoration-color:blue; }
+span.under11 { text-decoration-color:purple; }
+span.under12 { text-decoration-color:orange; }
+span.under13 { text-decoration-color:yellow; }
+span.under14 { text-decoration-color:teal; }
+
+tr.selectedRow { background-color:#000; }
+td.rowSelectCheckbox { cursor: pointer; }
+th.selectAllCheckbox { cursor: pointer; }
