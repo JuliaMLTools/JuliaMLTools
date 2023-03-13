@@ -252,9 +252,9 @@ export default function Index() {
 
                     <CodeTabs 
                         tabs={[
-                            {title:"shakespeare.jl", code:<CodeBlock code={example1}/>},
-                            {title:"imports.jl", code:<CodeBlock code={code2}/>},
-                            {title:"Project.toml", code:<CodeBlock code={code3}/>}
+                            {title:"shakespeare.jl", code:<CodeBlock code={example1} customStyle={{margin:0, padding:0}} />},
+                            {title:"imports.jl", code:<CodeBlock code={code2} customStyle={{margin:0, padding:0}}/>},
+                            {title:"Project.toml", code:<CodeBlock code={code3} customStyle={{margin:0, padding:0}}/>}
                         ]} 
                     />
 

@@ -19,25 +19,9 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
   }));
 
-export default function Index() {
-    return (
-        <Container maxWidth="lg">
-            <Grid container spacing={2} style={{marginTop:20}}>
-                <Grid xs={4} style={{paddingRight:30}}>
-                    <Card variant="outlined">
-                        <NestedList/>
-                    </Card>
-                </Grid>
-                <Grid xs={8}>
-                    <Typography variant="h4" component="h1" gutterBottom>
-                        Next.js example
-                    </Typography>
-                    <ProTip />
-                </Grid>
-                <Grid xs={12} style={{paddingTop:20}}>
-                    <Copyright />
-                </Grid>
-            </Grid>
-    </Container>
-    );
+export default function Index(){
+    useEffect(() => {
+        redirect('/transformer-blocks');
+    }, []);
+    return <p></p>;
 }
