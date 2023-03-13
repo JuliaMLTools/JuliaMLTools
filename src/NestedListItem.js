@@ -13,9 +13,9 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
 
 export default function NestedListItem({category,links}){
-    const [open, setOpen] = React.useState(false);
+    const [open, setOpen] = React.useState(true);
     const handleClick = () => { setOpen(!open) };
-    
+
     return (
         <>
             <ListItemButton onClick={handleClick}>
