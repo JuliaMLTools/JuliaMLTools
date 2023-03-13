@@ -61,7 +61,7 @@ export default function Index() {
                         <Link href="https://github.com/JuliaMLTools/TransformerBlocks.jl">Source on GitHub</Link>
                     </Typography>
                     <Typography color="text.secondary">
-                        <Link href="https://juliamltools.github.io/TransformerBlocks.jl/dev/">API Docs</Link>
+                        <Link href="https://juliamltools.github.io/TransformerBlocks.jl">API Docs</Link>
                     </Typography>
                     
                     <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
