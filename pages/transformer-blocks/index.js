@@ -65,7 +65,7 @@ export default function Index() {
                     </Typography>
                     
                     <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
-                        Simple, blazing fast, transformer components.
+                        Simple, fast, transformer components.
                     </Typography>
                     
                     
