@@ -8,11 +8,9 @@ export default function Copyright() {
       
       <br/>
     <Typography variant="body2" color="text.secondary" align="center">
-      {' © '}
-      <MuiLink color="inherit" href="https://juliamltools.github.io/">
-        JuliaMLTools
-      </MuiLink>{' '}
-      {new Date().getFullYear()}.
+      <MuiLink color="inherit" href="https://twitter.com/JuliaMLTools">
+        @JuliaMLTools
+      </MuiLink>
     </Typography>
     </>
   );
