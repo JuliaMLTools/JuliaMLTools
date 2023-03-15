@@ -198,7 +198,7 @@ end
 train!(model)
 
 # generate from the model
-println(gensample())`;
+printsample(model)`;
 
 const code2 = `using TransformerBlocks
 using CUDA
