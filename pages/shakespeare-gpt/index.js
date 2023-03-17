@@ -143,9 +143,10 @@ function gensample(model)
     decode(idx)
 end
 
-function generate(m::GPTLanguageModel, context, max_new_tokens)
+function generate(model::GPTLanguageModel, context, max_new_tokens)
+    m = cpu(model)
     testmode!(m)
-    idx = context |> device
+    idx = context |> cpu
     # idx is (B, T) array of indices in the current context
     for _ in 1:max_new_tokens
         # crop idx to the last block_size tokens
@@ -155,14 +156,15 @@ function generate(m::GPTLanguageModel, context, max_new_tokens)
         # focus only on the last time step
         logits = logits[:, :, 1] # becomes (B, C)
         # apply softmax to get probabilities
-        probs = Flux.softmax(logits, dims=1) |> cpu # (B, C)
+        probs = Flux.softmax(logits, dims=1) # (B, C)
         # sample from the distribution
         id_next = Distributions.Categorical(probs[:,end]) |> rand
         # append sampled index to the running sequence
-        idx = vcat(idx, gpu([id_next]))
+        idx = vcat(idx, [id_next])
+        print(decode(id_next))
     end
     trainmode!(m)
-    cpu(idx)
+    idx
 end
 
 # initialize the model
