@@ -234,7 +234,7 @@ export default function Index() {
                     </Typography>
                     
                     <Typography color="text.secondary">
-                        TAGS  <Chip label="TransformerBlocks.jl" style={{cursor:"pointer"}} variant="outlined" size="small" component="a" href="/transformer-blocks" />
+                        TAGS  <Chip label="TransformerBlocks.jl" style={{cursor:"pointer",marginLeft:6}} variant="outlined" size="small" component="a" href="/transformer-blocks" />
                     </Typography>
 
                     <Typography color="text.secondary" style={{marginTop:10,marginBottom:10}}>
