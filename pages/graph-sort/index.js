@@ -75,7 +75,7 @@ export default function Index() {
                     <br/><br/><br/>
 
                     <Typography sx={{ mb: 3 }} color="text.secondary">
-                    Below is a visualization of the input and output arrays of such a function.
+                    Below is a matrix input/output visualization of such a function.
                     </Typography>
                     
                     <img src="gnn-matrix.png" style={{width:"100%"}} /> 
