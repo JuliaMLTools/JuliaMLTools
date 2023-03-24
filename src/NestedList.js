@@ -23,6 +23,7 @@ export default function NestedList() {
             <NestedListItem category="Packages" links={[
                 {title:"TransformerBlocks.jl", href:"/transformer-blocks"},
                 {title:"GraphNets.jl", href:"/graph-nets"},
+                {title:"EuclidGraphs.jl", href:"/euclid-graphs"},
             ]} />
         </List>
     );
