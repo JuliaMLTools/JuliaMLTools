@@ -86,7 +86,7 @@ export default function Index() {
                     </Typography>
                     
                     <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
-                        Simple, lightweight, beautiful graph rendering in VSCode and SVG.
+                        Simple, lightweight, beautiful graph rendering in VSCode and SVG.  Designed to quickly visualize input and output features for graph neural networks (such as <Link href="https://github.com/JuliaMLTools/GraphNets.jl">GraphNets.jl</Link>).
                     </Typography>
                     
                     <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary" variant="h5">

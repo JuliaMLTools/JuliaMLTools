@@ -9,6 +9,7 @@ import { Card } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
 import CodeBlock from '../transformer-blocks/code';
+import YouTubeVid from '../../src/YoutubeVid';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -194,11 +195,17 @@ export default function Index() {
                     <Typography color="text.secondary">
                         <Link href="https://juliamltools.github.io/GraphNets.jl">API Docs</Link>
                     </Typography>
-                    
+
                     <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
-                        Simple, blazing fast, graph neural network components.
+                        GraphNets.jl is a Julia implementation of DeepMind's <Link href="https://github.com/deepmind/graph_nets">Graph Nets</Link> and the paper <Link href="https://arxiv.org/abs/1806.01261">Relational inductive biases, deep learning, and graph networks</Link>.
                     </Typography>
-                    
+
+                    <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
+                    Petar Veličković gives a fantastic explanation of the Graph Nets architecture and graph neural networks in general in the lecture below.
+                    </Typography>
+
+                    <YouTubeVid width="100%" height="500" videoId="i79ewWQiUX4" />
+
                     <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary" variant="h5">
                         Setup
                     </Typography>
