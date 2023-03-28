@@ -64,6 +64,11 @@ logo(node_features) # Renders in VSCode
 write("logo.svg", logo(node_features))
 `;
 
+const example4 = `shapes = [pole triangle square; pentagon hexagon heptagon; octagon nonagon decagon]
+svgs = [g(; svg_width=200, svg_height=200) for g in EuclidGraph.(shapes; fully_connected=true)]
+grid = SVG(svgs)
+write("grid.svg", grid)
+`;
 
 export default function Index() {
     return (
@@ -111,6 +116,14 @@ export default function Index() {
                     <CodeBlock code={example3}/>
                     <p align="center">
                         <img width="400px" src="https://raw.githubusercontent.com/JuliaMLTools/EuclidGraphs.jl/main/docs/src/assets/logo.svg"/>
+                    </p>
+                    
+                    <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary" variant="h5">
+                        Example 4: Shapes
+                    </Typography>
+                    <CodeBlock code={example4}/>
+                    <p align="center">
+                        <img width="400px" src="https://raw.githubusercontent.com/JuliaMLTools/EuclidGraphs.jl/main/docs/src/assets/grid.svg"/>
                     </p>
 
                 </Grid>
