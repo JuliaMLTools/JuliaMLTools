@@ -19,7 +19,10 @@ export default function NestedList() {
         <List
             sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
             component="nav">
-            <NestedListItem category="Examples" links={[{title:"ShakespeareGPT", href:"/shakespeare-gpt"}]} />
+            <NestedListItem category="Examples" links={[
+                {title:"ShakespeareGPT", href:"/shakespeare-gpt"},
+                {title:"Graph Sort", href:"/graph-sort"},
+            ]} />
             <NestedListItem category="Packages" links={[
                 {title:"TransformerBlocks.jl", href:"/transformer-blocks"},
                 {title:"GraphNets.jl", href:"/graph-nets"},
