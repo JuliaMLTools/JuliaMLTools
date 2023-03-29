@@ -66,7 +66,7 @@ write("logo.svg", logo(node_features))
 
 const example4 = `shapes = [pole triangle square; pentagon hexagon heptagon; octagon nonagon decagon]
 svgs = [g(; svg_width=200, svg_height=200) for g in EuclidGraph.(shapes; fully_connected=true)]
-grid = SVG(svgs)
+grid = SVG(svgs) # Renders in VSCode
 write("grid.svg", grid)
 `;
 
